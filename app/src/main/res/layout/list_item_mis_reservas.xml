@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:padding="3dp"
+        android:layout_marginTop="0.8dp">
+
+        <ImageView
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:id="@+id/item_list_mis_reservas_img"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/linearLayout6" />
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#"
+                        android:id="@+id/textView21"
+                        android:layout_marginTop="-3dp"
+                        android:textColor="#61210B"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_list_mis_reservas_tvHabitacionId"
+                        android:text="14"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ff5a00"
+                        android:textSize="26dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-3dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_list_mis_reservas_tvTitulo"
+                        android:text="Habitacion 1"
+                        android:layout_alignTop="@+id/item_list_mis_reservas_tvHabitacionId"
+                        android:layout_toEndOf="@+id/item_list_mis_reservas_tvHabitacionId"
+                        android:textColor="#61210B"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1.5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inicia:"
+                        android:id="@+id/textView22"
+                        android:textColor="#61210B"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1.5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_list_mis_reservas_tvFechaInicio"
+                        android:layout_alignTop="@+id/item_list_mis_reservas_tvFechaFin"
+                        android:layout_alignParentEnd="true"
+                        android:text="12/12/2016"
+                        android:visibility="visible"
+                        android:textColor="#61210B"
+                        android:layout_marginBottom="1.5dp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Culmina:"
+                        android:id="@+id/textView23"
+                        android:textColor="#61210B"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1.5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_list_mis_reservas_tvFechaFin"
+                        android:text="15/12/2016"
+                        android:layout_centerVertical="true"
+                        android:layout_alignStart="@+id/item_list_mis_reservas_tvHabitacionId"
+                        android:textColor="#61210B"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1.5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio x Dia: S/"
+                        android:id="@+id/textView24"
+                        android:textColor="#61210B"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="1.5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_list_mis_reservas_tvPrecio"
+                        android:layout_alignTop="@+id/item_list_mis_reservas_tvFechaFin"
+                        android:layout_alignParentEnd="true"
+                        android:text="555.995"
+                        android:visibility="visible"
+                        android:textColor="#61210B"
+                        android:layout_marginBottom="1.5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/linearLayout6"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:id="@+id/textView25"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="#61210B" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/btnDerecha"
+                android:background="@null"
+                android:textColor="#ffffff"
+                android:src="@drawable/btnestadodisponible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

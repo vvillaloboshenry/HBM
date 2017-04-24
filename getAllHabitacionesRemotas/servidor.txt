@@ -1,0 +1,13 @@
+--- Hostinger.es //
+dominio:hotelbm.esy.es
+clave: junitcase
+
+NombreBD: u216537233_bdhot
+NombreUsuario: u216537233_henry
+Pass BD : junitcase
+
+E-mail: vvillaloboshenry@gmail.com
+ftp server : hotelbm.esy.es
+usuario : u216537233
+clave : junitcase
+https://cpanel.hostinger.es/databases/phpmyadmin/aid/21645797

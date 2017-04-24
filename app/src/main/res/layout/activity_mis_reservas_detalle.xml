@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbarMisReservasDetalle"
+            layout="@layout/toolbar"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarMisReservasDetalle">
+
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/coordinator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Objeto con Scroll -->
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/app_bar"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="24dp">
+
+                        <!-- Card Perfil -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/card_margin">
+
+                            <LinearLayout
+                                style="@style/Widget.CardContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <!--Etiqueta Perfil -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Datos de la Facturacion"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                                <!--Texto de ejemplo-->
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Precio de Habitacion por Noche:"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView15"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="S/." />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvHabitacionPrecio"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="888.55" />
+
+                                    <TextView
+                                        android:id="@+id/textView26"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="soles" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Numero de dias a Hospedarse:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvCantidadDias"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="13" />
+
+                                    <TextView
+                                        android:id="@+id/textView20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="dias" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView28"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="IGV:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView29"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="18" />
+
+                                    <TextView
+                                        android:id="@+id/textView30"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="%" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="SubTotal:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvSubTotal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Cantidad x Precio" />
+
+                                    <TextView
+                                        android:id="@+id/textView33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="soles" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Total:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvTotal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="SubTotal + (SubTotal*IGV)" />
+
+                                    <TextView
+                                        android:id="@+id/textView36"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="soles" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <!-- Card Amigos -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/card_margin"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:layout_marginRight="@dimen/card_margin">
+
+                            <LinearLayout
+                                style="@style/Widget.CardContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- Etiqueta Amigos -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Informacion de la Habitacion"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                                <!-- Texto de ejemplo -->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView37"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Codigo de la Habitacion:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView38"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="3dp"
+                                        android:text="#" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvHabitacionID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="15" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/mis_reservas_detalle_tvCategoriaTitulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cama Nupsial Habit"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/mis_reservas_detalle_tvCategoriaDescripcion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Linda cama para dormir, este mensaje es solamente una prueba... No es necesario tanto texto extenso, fin de la prueba" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Numero de Cuartos:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvHabitacionNCuartos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="4" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView42"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Numero de Dormitorios:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvHabitacionNDormitorios"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="4" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView46"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Numero de Baños:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvHabitacionNBanos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:text="2" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <!-- Card Intereses -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/card_margin"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:layout_marginRight="@dimen/card_margin">
+
+                            <LinearLayout
+                                style="@style/Widget.CardContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- Etiqueta Intereses -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Informacion de la Reserva"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                <!-- Texto de ejemplo -->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Codigo de Reserva:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvReservaId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="145" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Fecha Entrada:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvReservaFEntrada"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="12/11/2016" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Fecha Salida:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvReservaFSalida"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="12/12/2016" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Nombre:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvClienteNombre"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Vasquez Villalobos Deivi" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="DNI:"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/mis_reservas_detalle_tvClienteDni"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="494949" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <!-- App Bar -->
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:fitsSystemWindows="true"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <!-- Collapser -->
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/collapser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:expandedTitleMarginEnd="64dp"
+                        app:expandedTitleMarginStart="48dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <!-- Imagen del detalle -->
+                        <ImageView
+                            android:id="@+id/image_paralax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="centerCrop"
+                            app:layout_collapseMode="parallax" />
+
+                        <!-- Toolbar -->
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <!-- FAB -->
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

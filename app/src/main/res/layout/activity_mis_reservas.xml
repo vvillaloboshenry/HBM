@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controles.MisReservasActivity">
+
+    <include
+        android:id="@+id/toolbarMisReservas"
+        layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarMisReservas">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Estado: "
+            android:textColor="#61210B"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/mis_reservas_tvReservasEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="Activas"
+            android:textColor="#61210B"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4" />
+
+    </RelativeLayout>
+</RelativeLayout>

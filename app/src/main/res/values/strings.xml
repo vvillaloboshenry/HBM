@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HBM</string>
+    <string name="mis_reservas_recientes">Recientes</string>
+    <string name="mis_reservas_activas">Activas</string>
+    <string name="mis_reservas_finalizadas">Finalizadas</string>
+    <string name="mis_reservas_canceladas">Canceladas</string>
+    <string name="mis_reservas_eliminadas">Papelera</string>
+    <string name="mis_reservas_all_disponibles">Todas</string>
+
+    <!-- <string name="mis_reservas_detalle_editar">Editar</string> -->
+    <string name="mis_reservas_detalle_cancelar">Cancelar Reserva</string>
+    <string name="mis_reservas_detalle_papelera">Enviar a Papelera</string>
+    <string name="mis_reservas_detalle_eliminar">Eliminar Reserva</string>
+</resources>

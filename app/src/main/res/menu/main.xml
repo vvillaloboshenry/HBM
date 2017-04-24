@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HBM="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_recientes"
+        android:title="@string/mis_reservas_recientes"
+        HBM:showAsAction="never" />
+    <item
+        android:id="@+id/action_activas"
+        android:title="@string/mis_reservas_activas"
+        HBM:showAsAction="never" />
+    <item
+        android:id="@+id/action_finalizadas"
+        android:title="@string/mis_reservas_finalizadas"
+        HBM:showAsAction="never" />
+    <item
+        android:id="@+id/action_canceladas"
+        android:title="@string/mis_reservas_canceladas"
+        HBM:showAsAction="never" />
+    <item
+        android:id="@+id/action_eliminadas"
+        android:title="@string/mis_reservas_eliminadas"
+        HBM:showAsAction="never" />
+    <item
+        android:id="@+id/action_all_disponibles"
+        android:title="@string/mis_reservas_all_disponibles"
+        HBM:showAsAction="never" />
+</menu>
